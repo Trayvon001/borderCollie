@@ -4,13 +4,13 @@
             "LatestVersion":"V2.0.0",
             "Url":"https://www.demo.com/Demo_v1.1.exe",
             "UpdateTime":"2021-9-16",
-                  "ReleaseNote":"\n1.添加检查更新说明，包含版本号，下载链接，更新时间，更新说明.\n2."
+                  "ReleaseNote":"\n1.娣诲姞妫�鏌ユ洿鏂拌鏄庯紝鍖呭惈鐗堟湰鍙凤紝涓嬭浇閾炬帴锛屾洿鏂版椂闂达紝鏇存柊璇存槑.\n2."
         },
     "RGBContrl":
         {
             "LatestVersion":"V2.0.0",
             "Url":"https://www.demo.com/Demo_v1.1.exe",
             "UpdateTime":"2021-9-16",
-                   "ReleaseNote":"版本说明"
+                   "ReleaseNote":"鐗堟湰璇存槑"
         }
     }
