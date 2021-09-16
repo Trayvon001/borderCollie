@@ -1,15 +1,15 @@
 {
     "borderCollie":
         {
-            "LatestVersion":"V2.0.0",
-            "Url":"https://github.com/Trayvon001/borderCollie/raw/master/borderCollie.exe",
+            "LatestVersion":"V2.1.0",
+            "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
             "UpdateTime":"2021-9-16",
                   "ReleaseNote":"\n1.添加检查更新说明，包含版本号，下载链接，更新时间，更新说明.\n2."
         },
     "RGBContrl":
         {
             "LatestVersion":"V2.0.0",
-            "Url":"https://github.com/Trayvon001/borderCollie/raw/master/borderCollie.exe",
+            "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
             "UpdateTime":"2021-9-16",
                    "ReleaseNote":"版本说明"
         }
