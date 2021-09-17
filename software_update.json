@@ -1,14 +1,14 @@
 {
     "borderCollie":
         {
-            "LatestVersion":"V2.0.3",
+            "LatestVersion":"V2.0.4",
             "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
             "UpdateTime":"2021-9-17",
                   "ReleaseNote":"\n1.修复零食显示bug"
         },
     "RGBContrl":
         {
-            "LatestVersion":"V2.0.3",
+            "LatestVersion":"V2.0.4",
             "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
             "UpdateTime":"2021-9-17",
                    "ReleaseNote":"测试"
