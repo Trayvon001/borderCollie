@@ -1,14 +1,14 @@
 {
     "borderCollie":
         {
-            "LatestVersion":"V2.0.0",
+            "LatestVersion":"V2.1.0",
             "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
             "UpdateTime":"2021-9-17",
                   "ReleaseNote":"\n1.测试自动更新程序.\n2.增加了头部版本信息功能。\n3.升级了了GUI界面。\n4.添加数据更加智能化"
         },
     "RGBContrl":
         {
-            "LatestVersion":"V2.0.0",
+            "LatestVersion":"V2.1.0",
             "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
             "UpdateTime":"2021-9-17",
                    "ReleaseNote":"测试"
