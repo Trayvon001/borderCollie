@@ -1,16 +1,16 @@
 {
     "borderCollie":
         {
-            "LatestVersion":"V3.0.0",
+            "LatestVersion":"V2.0.0",
             "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
             "UpdateTime":"2021-9-16",
-                  "ReleaseNote":"\n1.²âÊÔ×Ô¶¯¸üĞÂ³ÌĞò.\n2.Ôö¼ÓÁËÍ·²¿°æ±¾ĞÅÏ¢¹¦ÄÜ¡£\n3.Éı¼¶ÁËÁËGUI½çÃæ¡£\n4.Ìí¼ÓÊı¾İ¸ü¼ÓÖÇÄÜ»¯"
+                  "ReleaseNote":"\n1.æµ‹è¯•è‡ªåŠ¨æ›´æ–°ç¨‹åº.\n2.å¢åŠ äº†å¤´éƒ¨ç‰ˆæœ¬ä¿¡æ¯åŠŸèƒ½ã€‚\n3.å‡çº§äº†äº†GUIç•Œé¢ã€‚\n4.æ·»åŠ æ•°æ®æ›´åŠ æ™ºèƒ½åŒ–"
         },
     "RGBContrl":
         {
-            "LatestVersion":"V3.0.0",
+            "LatestVersion":"V2.0.0",
             "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
             "UpdateTime":"2021-9-16",
-                   "ReleaseNote":"²âÊÔ"
+                   "ReleaseNote":"æµ‹è¯•"
         }
     }
