@@ -1,14 +1,14 @@
 {
     "borderCollie":
         {
-            "LatestVersion":"V2.0.4",
+            "LatestVersion":"V2.1.0",
             "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
             "UpdateTime":"2021-9-17",
-                  "ReleaseNote":"\n1.修复零食显示bug"
+                  "ReleaseNote":"\n1.新增了电子元件和地铁进度条\n2.新增了月平均消费曲线\n3.修复了添加数据智能化的bug\n4.新增日历组件\n5.发布正式版"
         },
     "RGBContrl":
         {
-            "LatestVersion":"V2.0.4",
+            "LatestVersion":"V2.1.0",
             "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
             "UpdateTime":"2021-9-17",
                    "ReleaseNote":"测试"
