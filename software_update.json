@@ -1,14 +1,14 @@
 {
     "borderCollie":
         {
-            "LatestVersion":"V2.2.0",
+            "LatestVersion":"V2.2.1",
             "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
             "UpdateTime":"2021-9-19",
-                  "ReleaseNote":"\n1.将电子元器件进度条更改为考研资料进度条\n2.发布正式版本"
+                  "ReleaseNote":"\n1.修复bugV2.0.0的bug"
         },
     "RGBContrl":
         {
-            "LatestVersion":"V2.2.0",
+            "LatestVersion":"V2.2.1",
             "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
             "UpdateTime":"2021-9-17",
                    "ReleaseNote":"测试"
