@@ -1,14 +1,14 @@
 {
     "borderCollie":
         {
-            "LatestVersion":"V2.2.1",
+            "LatestVersion":"V2.2.3",
             "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
-            "UpdateTime":"2021-9-19",
-                  "ReleaseNote":"\n1.修复bugV2.0.0的bug"
+            "UpdateTime":"2021-9-30",
+                  "ReleaseNote":"\n1.修复了30号添加数据导致内存溢出的问题\n2.修复了肯德基进度条显示不明显的问题"
         },
     "RGBContrl":
         {
-            "LatestVersion":"V2.2.1",
+            "LatestVersion":"V2.2.3",
             "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
             "UpdateTime":"2021-9-17",
                    "ReleaseNote":"测试"
