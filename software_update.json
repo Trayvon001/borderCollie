@@ -4,7 +4,7 @@
             "LatestVersion":"V2.3.0",
             "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
             "UpdateTime":"2021-9-30",
-                  "ReleaseNote":"\n1.新增了到达新月份自动创建数据文件\n2.将考研资料进度条更改为了电子元件进度条\n3.修改了麦当劳进度条的显示\n4.新增了估计月度总消费的功能"
+                  "ReleaseNote":"\n1.添加单片机控制台组件\n2.新增了到达新月份自动创建数据文件\n3.将考研资料进度条更改为了电子元件进度条\n4.修改了麦当劳进度条的显示\n5.新增了估计月度总消费的功能"
         },
     "RGBContrl":
         {
