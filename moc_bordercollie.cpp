@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_bordercollie_t {
-    QByteArrayData data[15];
-    char stringdata0[226];
+    QByteArrayData data[17];
+    char stringdata0[259];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -40,19 +40,21 @@ QT_MOC_LITERAL(4, 38, 5), // "event"
 QT_MOC_LITERAL(5, 44, 13), // "replyFinished"
 QT_MOC_LITERAL(6, 58, 14), // "QNetworkReply*"
 QT_MOC_LITERAL(7, 73, 6), // "reply1"
-QT_MOC_LITERAL(8, 80, 21), // "on_pushButton_clicked"
-QT_MOC_LITERAL(9, 102, 22), // "on_addData_btn_clicked"
-QT_MOC_LITERAL(10, 125, 27), // "on_tabWidget_currentChanged"
-QT_MOC_LITERAL(11, 153, 5), // "index"
-QT_MOC_LITERAL(12, 159, 22), // "on_display_btn_clicked"
-QT_MOC_LITERAL(13, 182, 26), // "on_checkUpdate_btn_clicked"
-QT_MOC_LITERAL(14, 209, 16) // "displayUpdateLog"
+QT_MOC_LITERAL(8, 80, 18), // "sliderValueChanged"
+QT_MOC_LITERAL(9, 99, 13), // "sliderValueUI"
+QT_MOC_LITERAL(10, 113, 21), // "on_pushButton_clicked"
+QT_MOC_LITERAL(11, 135, 22), // "on_addData_btn_clicked"
+QT_MOC_LITERAL(12, 158, 27), // "on_tabWidget_currentChanged"
+QT_MOC_LITERAL(13, 186, 5), // "index"
+QT_MOC_LITERAL(14, 192, 22), // "on_display_btn_clicked"
+QT_MOC_LITERAL(15, 215, 26), // "on_checkUpdate_btn_clicked"
+QT_MOC_LITERAL(16, 242, 16) // "displayUpdateLog"
 
     },
     "bordercollie\0mouseMove1\0\0QMouseEvent*\0"
     "event\0replyFinished\0QNetworkReply*\0"
-    "reply1\0on_pushButton_clicked\0"
-    "on_addData_btn_clicked\0"
+    "reply1\0sliderValueChanged\0sliderValueUI\0"
+    "on_pushButton_clicked\0on_addData_btn_clicked\0"
     "on_tabWidget_currentChanged\0index\0"
     "on_display_btn_clicked\0"
     "on_checkUpdate_btn_clicked\0displayUpdateLog"
@@ -65,7 +67,7 @@ static const uint qt_meta_data_bordercollie[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -73,21 +75,23 @@ static const uint qt_meta_data_bordercollie[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   54,    2, 0x0a /* Public */,
-       5,    1,   57,    2, 0x0a /* Public */,
-       8,    0,   60,    2, 0x08 /* Private */,
-       9,    0,   61,    2, 0x08 /* Private */,
-      10,    1,   62,    2, 0x08 /* Private */,
-      12,    0,   65,    2, 0x08 /* Private */,
-      13,    0,   66,    2, 0x08 /* Private */,
-      14,    0,   67,    2, 0x08 /* Private */,
+       1,    1,   59,    2, 0x0a /* Public */,
+       5,    1,   62,    2, 0x0a /* Public */,
+       8,    1,   65,    2, 0x0a /* Public */,
+      10,    0,   68,    2, 0x08 /* Private */,
+      11,    0,   69,    2, 0x08 /* Private */,
+      12,    1,   70,    2, 0x08 /* Private */,
+      14,    0,   73,    2, 0x08 /* Private */,
+      15,    0,   74,    2, 0x08 /* Private */,
+      16,    0,   75,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
     QMetaType::Void, 0x80000000 | 6,    7,
+    QMetaType::Void, QMetaType::Int,    9,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,   11,
+    QMetaType::Void, QMetaType::Int,   13,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -103,12 +107,13 @@ void bordercollie::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         switch (_id) {
         case 0: _t->mouseMove1((*reinterpret_cast< QMouseEvent*(*)>(_a[1]))); break;
         case 1: _t->replyFinished((*reinterpret_cast< QNetworkReply*(*)>(_a[1]))); break;
-        case 2: _t->on_pushButton_clicked(); break;
-        case 3: _t->on_addData_btn_clicked(); break;
-        case 4: _t->on_tabWidget_currentChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 5: _t->on_display_btn_clicked(); break;
-        case 6: _t->on_checkUpdate_btn_clicked(); break;
-        case 7: _t->displayUpdateLog(); break;
+        case 2: _t->sliderValueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 3: _t->on_pushButton_clicked(); break;
+        case 4: _t->on_addData_btn_clicked(); break;
+        case 5: _t->on_tabWidget_currentChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 6: _t->on_display_btn_clicked(); break;
+        case 7: _t->on_checkUpdate_btn_clicked(); break;
+        case 8: _t->displayUpdateLog(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -154,13 +159,13 @@ int bordercollie::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }
