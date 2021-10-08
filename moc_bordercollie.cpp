@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_bordercollie_t {
-    QByteArrayData data[17];
-    char stringdata0[259];
+    QByteArrayData data[21];
+    char stringdata0[332];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -48,7 +48,11 @@ QT_MOC_LITERAL(12, 158, 27), // "on_tabWidget_currentChanged"
 QT_MOC_LITERAL(13, 186, 5), // "index"
 QT_MOC_LITERAL(14, 192, 22), // "on_display_btn_clicked"
 QT_MOC_LITERAL(15, 215, 26), // "on_checkUpdate_btn_clicked"
-QT_MOC_LITERAL(16, 242, 16) // "displayUpdateLog"
+QT_MOC_LITERAL(16, 242, 16), // "displayUpdateLog"
+QT_MOC_LITERAL(17, 259, 22), // "on_connect_btn_clicked"
+QT_MOC_LITERAL(18, 282, 16), // "socket_Read_Data"
+QT_MOC_LITERAL(19, 299, 19), // "socket_Disconnected"
+QT_MOC_LITERAL(20, 319, 12) // "wifiReadData"
 
     },
     "bordercollie\0mouseMove1\0\0QMouseEvent*\0"
@@ -57,7 +61,9 @@ QT_MOC_LITERAL(16, 242, 16) // "displayUpdateLog"
     "on_pushButton_clicked\0on_addData_btn_clicked\0"
     "on_tabWidget_currentChanged\0index\0"
     "on_display_btn_clicked\0"
-    "on_checkUpdate_btn_clicked\0displayUpdateLog"
+    "on_checkUpdate_btn_clicked\0displayUpdateLog\0"
+    "on_connect_btn_clicked\0socket_Read_Data\0"
+    "socket_Disconnected\0wifiReadData"
 };
 #undef QT_MOC_LITERAL
 
@@ -67,7 +73,7 @@ static const uint qt_meta_data_bordercollie[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+      13,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -75,15 +81,19 @@ static const uint qt_meta_data_bordercollie[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   59,    2, 0x0a /* Public */,
-       5,    1,   62,    2, 0x0a /* Public */,
-       8,    1,   65,    2, 0x0a /* Public */,
-      10,    0,   68,    2, 0x08 /* Private */,
-      11,    0,   69,    2, 0x08 /* Private */,
-      12,    1,   70,    2, 0x08 /* Private */,
-      14,    0,   73,    2, 0x08 /* Private */,
-      15,    0,   74,    2, 0x08 /* Private */,
-      16,    0,   75,    2, 0x08 /* Private */,
+       1,    1,   79,    2, 0x0a /* Public */,
+       5,    1,   82,    2, 0x0a /* Public */,
+       8,    1,   85,    2, 0x0a /* Public */,
+      10,    0,   88,    2, 0x08 /* Private */,
+      11,    0,   89,    2, 0x08 /* Private */,
+      12,    1,   90,    2, 0x08 /* Private */,
+      14,    0,   93,    2, 0x08 /* Private */,
+      15,    0,   94,    2, 0x08 /* Private */,
+      16,    0,   95,    2, 0x08 /* Private */,
+      17,    0,   96,    2, 0x08 /* Private */,
+      18,    0,   97,    2, 0x08 /* Private */,
+      19,    0,   98,    2, 0x08 /* Private */,
+      20,    0,   99,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
@@ -92,6 +102,10 @@ static const uint qt_meta_data_bordercollie[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int,   13,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -114,6 +128,10 @@ void bordercollie::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 6: _t->on_display_btn_clicked(); break;
         case 7: _t->on_checkUpdate_btn_clicked(); break;
         case 8: _t->displayUpdateLog(); break;
+        case 9: _t->on_connect_btn_clicked(); break;
+        case 10: _t->socket_Read_Data(); break;
+        case 11: _t->socket_Disconnected(); break;
+        case 12: _t->wifiReadData(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -159,13 +177,13 @@ int bordercollie::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 13)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 13;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
+        if (_id < 13)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 13;
     }
     return _id;
 }
