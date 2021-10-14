@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_bordercollie_t {
-    QByteArrayData data[24];
-    char stringdata0[400];
+    QByteArrayData data[33];
+    char stringdata0[650];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -42,33 +42,50 @@ QT_MOC_LITERAL(6, 58, 14), // "QNetworkReply*"
 QT_MOC_LITERAL(7, 73, 6), // "reply1"
 QT_MOC_LITERAL(8, 80, 18), // "sliderValueChanged"
 QT_MOC_LITERAL(9, 99, 13), // "sliderValueUI"
-QT_MOC_LITERAL(10, 113, 21), // "on_pushButton_clicked"
-QT_MOC_LITERAL(11, 135, 22), // "on_addData_btn_clicked"
-QT_MOC_LITERAL(12, 158, 27), // "on_tabWidget_currentChanged"
-QT_MOC_LITERAL(13, 186, 5), // "index"
-QT_MOC_LITERAL(14, 192, 22), // "on_display_btn_clicked"
-QT_MOC_LITERAL(15, 215, 26), // "on_checkUpdate_btn_clicked"
-QT_MOC_LITERAL(16, 242, 16), // "displayUpdateLog"
-QT_MOC_LITERAL(17, 259, 22), // "on_connect_btn_clicked"
-QT_MOC_LITERAL(18, 282, 16), // "socket_Read_Data"
-QT_MOC_LITERAL(19, 299, 19), // "socket_Disconnected"
-QT_MOC_LITERAL(20, 319, 12), // "wifiReadData"
-QT_MOC_LITERAL(21, 332, 20), // "on_clear_btn_clicked"
-QT_MOC_LITERAL(22, 353, 19), // "on_send_btn_clicked"
-QT_MOC_LITERAL(23, 373, 26) // "on_stopDisplay_btn_clicked"
+QT_MOC_LITERAL(10, 113, 21), // "calculateNetworkSpeed"
+QT_MOC_LITERAL(11, 135, 21), // "on_pushButton_clicked"
+QT_MOC_LITERAL(12, 157, 22), // "on_addData_btn_clicked"
+QT_MOC_LITERAL(13, 180, 27), // "on_tabWidget_currentChanged"
+QT_MOC_LITERAL(14, 208, 5), // "index"
+QT_MOC_LITERAL(15, 214, 22), // "on_display_btn_clicked"
+QT_MOC_LITERAL(16, 237, 26), // "on_checkUpdate_btn_clicked"
+QT_MOC_LITERAL(17, 264, 16), // "displayUpdateLog"
+QT_MOC_LITERAL(18, 281, 22), // "on_connect_btn_clicked"
+QT_MOC_LITERAL(19, 304, 16), // "socket_Read_Data"
+QT_MOC_LITERAL(20, 321, 19), // "socket_Disconnected"
+QT_MOC_LITERAL(21, 341, 12), // "wifiReadData"
+QT_MOC_LITERAL(22, 354, 20), // "on_clear_btn_clicked"
+QT_MOC_LITERAL(23, 375, 19), // "on_send_btn_clicked"
+QT_MOC_LITERAL(24, 395, 26), // "on_stopDisplay_btn_clicked"
+QT_MOC_LITERAL(25, 422, 24), // "on_calculate_btn_clicked"
+QT_MOC_LITERAL(26, 447, 31), // "on_newTag_Checkbox_stateChanged"
+QT_MOC_LITERAL(27, 479, 4), // "arg1"
+QT_MOC_LITERAL(28, 484, 30), // "on_tab2_clearInput_btn_clicked"
+QT_MOC_LITERAL(29, 515, 34), // "on_tab2_addSelectedTag_btn_cl..."
+QT_MOC_LITERAL(30, 550, 29), // "on_tab2_createDoc_btn_clicked"
+QT_MOC_LITERAL(31, 580, 38), // "on_tab2_newAuthorCheckbox_sta..."
+QT_MOC_LITERAL(32, 619, 30) // "on_tab2_selectPath_btn_clicked"
 
     },
     "bordercollie\0mouseMove1\0\0QMouseEvent*\0"
     "event\0replyFinished\0QNetworkReply*\0"
     "reply1\0sliderValueChanged\0sliderValueUI\0"
-    "on_pushButton_clicked\0on_addData_btn_clicked\0"
+    "calculateNetworkSpeed\0on_pushButton_clicked\0"
+    "on_addData_btn_clicked\0"
     "on_tabWidget_currentChanged\0index\0"
     "on_display_btn_clicked\0"
     "on_checkUpdate_btn_clicked\0displayUpdateLog\0"
     "on_connect_btn_clicked\0socket_Read_Data\0"
     "socket_Disconnected\0wifiReadData\0"
     "on_clear_btn_clicked\0on_send_btn_clicked\0"
-    "on_stopDisplay_btn_clicked"
+    "on_stopDisplay_btn_clicked\0"
+    "on_calculate_btn_clicked\0"
+    "on_newTag_Checkbox_stateChanged\0arg1\0"
+    "on_tab2_clearInput_btn_clicked\0"
+    "on_tab2_addSelectedTag_btn_clicked\0"
+    "on_tab2_createDoc_btn_clicked\0"
+    "on_tab2_newAuthorCheckbox_stateChanged\0"
+    "on_tab2_selectPath_btn_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -78,7 +95,7 @@ static const uint qt_meta_data_bordercollie[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      16,   14, // methods
+      24,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -86,22 +103,30 @@ static const uint qt_meta_data_bordercollie[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   94,    2, 0x0a /* Public */,
-       5,    1,   97,    2, 0x0a /* Public */,
-       8,    1,  100,    2, 0x0a /* Public */,
-      10,    0,  103,    2, 0x08 /* Private */,
-      11,    0,  104,    2, 0x08 /* Private */,
-      12,    1,  105,    2, 0x08 /* Private */,
-      14,    0,  108,    2, 0x08 /* Private */,
-      15,    0,  109,    2, 0x08 /* Private */,
-      16,    0,  110,    2, 0x08 /* Private */,
-      17,    0,  111,    2, 0x08 /* Private */,
-      18,    0,  112,    2, 0x08 /* Private */,
-      19,    0,  113,    2, 0x08 /* Private */,
-      20,    0,  114,    2, 0x08 /* Private */,
-      21,    0,  115,    2, 0x08 /* Private */,
-      22,    0,  116,    2, 0x08 /* Private */,
-      23,    0,  117,    2, 0x08 /* Private */,
+       1,    1,  134,    2, 0x0a /* Public */,
+       5,    1,  137,    2, 0x0a /* Public */,
+       8,    1,  140,    2, 0x0a /* Public */,
+      10,    0,  143,    2, 0x0a /* Public */,
+      11,    0,  144,    2, 0x08 /* Private */,
+      12,    0,  145,    2, 0x08 /* Private */,
+      13,    1,  146,    2, 0x08 /* Private */,
+      15,    0,  149,    2, 0x08 /* Private */,
+      16,    0,  150,    2, 0x08 /* Private */,
+      17,    0,  151,    2, 0x08 /* Private */,
+      18,    0,  152,    2, 0x08 /* Private */,
+      19,    0,  153,    2, 0x08 /* Private */,
+      20,    0,  154,    2, 0x08 /* Private */,
+      21,    0,  155,    2, 0x08 /* Private */,
+      22,    0,  156,    2, 0x08 /* Private */,
+      23,    0,  157,    2, 0x08 /* Private */,
+      24,    0,  158,    2, 0x08 /* Private */,
+      25,    0,  159,    2, 0x08 /* Private */,
+      26,    1,  160,    2, 0x08 /* Private */,
+      28,    0,  163,    2, 0x08 /* Private */,
+      29,    0,  164,    2, 0x08 /* Private */,
+      30,    0,  165,    2, 0x08 /* Private */,
+      31,    1,  166,    2, 0x08 /* Private */,
+      32,    0,  169,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
@@ -109,7 +134,8 @@ static const uint qt_meta_data_bordercollie[] = {
     QMetaType::Void, QMetaType::Int,    9,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,   13,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,   14,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -119,6 +145,13 @@ static const uint qt_meta_data_bordercollie[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,   27,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,   27,
     QMetaType::Void,
 
        0        // eod
@@ -133,19 +166,27 @@ void bordercollie::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 0: _t->mouseMove1((*reinterpret_cast< QMouseEvent*(*)>(_a[1]))); break;
         case 1: _t->replyFinished((*reinterpret_cast< QNetworkReply*(*)>(_a[1]))); break;
         case 2: _t->sliderValueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 3: _t->on_pushButton_clicked(); break;
-        case 4: _t->on_addData_btn_clicked(); break;
-        case 5: _t->on_tabWidget_currentChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 6: _t->on_display_btn_clicked(); break;
-        case 7: _t->on_checkUpdate_btn_clicked(); break;
-        case 8: _t->displayUpdateLog(); break;
-        case 9: _t->on_connect_btn_clicked(); break;
-        case 10: _t->socket_Read_Data(); break;
-        case 11: _t->socket_Disconnected(); break;
-        case 12: _t->wifiReadData(); break;
-        case 13: _t->on_clear_btn_clicked(); break;
-        case 14: _t->on_send_btn_clicked(); break;
-        case 15: _t->on_stopDisplay_btn_clicked(); break;
+        case 3: _t->calculateNetworkSpeed(); break;
+        case 4: _t->on_pushButton_clicked(); break;
+        case 5: _t->on_addData_btn_clicked(); break;
+        case 6: _t->on_tabWidget_currentChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 7: _t->on_display_btn_clicked(); break;
+        case 8: _t->on_checkUpdate_btn_clicked(); break;
+        case 9: _t->displayUpdateLog(); break;
+        case 10: _t->on_connect_btn_clicked(); break;
+        case 11: _t->socket_Read_Data(); break;
+        case 12: _t->socket_Disconnected(); break;
+        case 13: _t->wifiReadData(); break;
+        case 14: _t->on_clear_btn_clicked(); break;
+        case 15: _t->on_send_btn_clicked(); break;
+        case 16: _t->on_stopDisplay_btn_clicked(); break;
+        case 17: _t->on_calculate_btn_clicked(); break;
+        case 18: _t->on_newTag_Checkbox_stateChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 19: _t->on_tab2_clearInput_btn_clicked(); break;
+        case 20: _t->on_tab2_addSelectedTag_btn_clicked(); break;
+        case 21: _t->on_tab2_createDoc_btn_clicked(); break;
+        case 22: _t->on_tab2_newAuthorCheckbox_stateChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 23: _t->on_tab2_selectPath_btn_clicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -191,13 +232,13 @@ int bordercollie::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 16)
+        if (_id < 24)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 16;
+        _id -= 24;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 16)
+        if (_id < 24)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 16;
+        _id -= 24;
     }
     return _id;
 }
