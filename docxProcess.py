@@ -8,7 +8,7 @@ Description: 用于word文件的创建搜索和处理
 """
 
 from docx import Document
-from docx.shared import Pt
+from docx.shared import Pt, Inches
 from docx.oxml.ns import qn
 from docx.shared import Inches
 import time
@@ -38,6 +38,7 @@ def createEngineeringDoc(title, author, contacts, tags, content, filepath, filen
     tagrr.rPr.rFonts.set(qn('w:eastAsia'), u'楷体')
     document.add_heading(time.strftime("%Y-%m-%d---%H:%M:%S", time.localtime()), 1)  # 添加当前时间
     paragraph = document.add_paragraph()
+    paragraph.paragraph_format.space_after = Inches(0)
     run = paragraph.add_run(content)
     run.font.name = u'宋体'
     run.font.size = Pt(12)
@@ -155,7 +156,6 @@ def count_file_and_num(count_path):  # 统计文件总数和工程数量
                 count_num[0] += 1
                 count_num[2] += os.path.getsize(path)
 
-
 def return_count_result(count_path):
     count_file_and_num(count_path)
     num2return = count_num.copy()
@@ -165,9 +165,23 @@ def return_count_result(count_path):
     count_num[2] = 0
     return [str(num2return[0]), str(num2return[1]), str(num2return[2])]
 
+def add_content(content, filepath):
+    document = Document(filepath)
+    document.add_heading(time.strftime("%Y-%m-%d---%H:%M:%S", time.localtime()), 1)  # 添加当前时间
+    paragraph = document.add_paragraph()
+    paragraph.paragraph_format.space_after = Inches(0)
+    run = paragraph.add_run(content)
+    run.font.name = u'宋体'
+    run.font.size = Pt(12)
+    r = run._element
+    r.rPr.rFonts.set(qn('w:eastAsia'), u'宋体')
+    document.save(filepath)
+    return 1
+
 # return_count_result("C:\\Users\\huawei\\iCloudDrive\\EngineeringRecords")
 # x = return_search_result(2, "Python", 1, "C:\\Users\\huawei\\iCloudDrive\\EngineeringRecords")
 # print(x)
-# createEngineeringDoc('测试功能', '齐承文-BUAA', 'Chengwen_qi@outlook.com', '测试', '本文件用于测试创建的功能',
-#                     'D:\\testCreate\\testMultiDir')
+# createEngineeringDoc('测试功能', '齐承文-BUAA', 'Chengwen_qi@outlook.com', '测试', '本文件用于测试创建的功能','D:\\testCreate\\testMultiDir', 'test')
+
 # 参考https://www.jianshu.com/p/1f60cdd9655a
+# add_content("测试新加内容的功能", "C:\\Users\\huawei\\iCloudDrive\\EngineeringRecords\\程序功能测试\\测试追加内容功能.docx")
