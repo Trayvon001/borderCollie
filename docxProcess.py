@@ -165,9 +165,9 @@ def return_count_result(count_path):
     count_num[2] = 0
     return [str(num2return[0]), str(num2return[1]), str(num2return[2])]
 
-def add_content(content, filepath):
+def add_content(content, subtitle, filepath):
     document = Document(filepath)
-    document.add_heading(time.strftime("%Y-%m-%d---%H:%M:%S", time.localtime()), 1)  # 添加当前时间
+    document.add_heading(time.strftime("%Y-%m-%d---%H:%M:%S", time.localtime()) + '-->' + subtitle, 1)  # 添加当前时间
     paragraph = document.add_paragraph()
     paragraph.paragraph_format.space_after = Inches(0)
     run = paragraph.add_run(content)
