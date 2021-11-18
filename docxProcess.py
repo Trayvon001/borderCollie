@@ -64,6 +64,8 @@ def search_in_str(content, target, fuzzy):
     content_len = len(content)
     target_len = len(target)
     flag = 0
+    content = content.lower()
+    target = target.lower()
     if fuzzy == 1:
         j = 0
         for i in range(content_len):
