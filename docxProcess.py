@@ -82,7 +82,10 @@ def search_in_str(content, target, fuzzy):
                     if target[j] != content[i + j]:
                         flag = 0
                         break
-    return flag
+    if flag == 1:
+        return 1
+    else:
+        return 0
 
 
 def search_word_content(type, target, fuzzy, path):  # type给定搜索类型，0为按标题查找，1为按作者查找， 2为按tag查找，3为按内容查找
