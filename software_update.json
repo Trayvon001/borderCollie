@@ -1,9 +1,9 @@
 {
     "borderCollie":
         {
-            "LatestVersion":"V2.3.1",
+            "LatestVersion":"V3.0.0",
             "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
-            "UpdateTime":"2021-9-30",
+            "UpdateTime":"2021-11-19",
                   "ReleaseNote":"\n1.添加单片机控制台组件\n2.新增工程记录管理功能\n3.新增了到达新月份自动创建数据文件\n4.修改了麦当劳进度条的显示\n5.新增了估计月度总消费的功能\n6.改进了圆形进度条的显示，将原来的直线末尾和开头改成了圆弧末尾和开头"
         },
     "RGBContrl":

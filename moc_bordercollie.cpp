@@ -23,8 +23,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_bordercollie_t {
-    QByteArrayData data[76];
-    char stringdata0[1430];
+    QByteArrayData data[80];
+    char stringdata0[1588];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -108,7 +108,11 @@ QT_MOC_LITERAL(71, 1266, 41), // "on_tab2_display_selected_word..."
 QT_MOC_LITERAL(72, 1308, 29), // "on_tab2_clearTags_btn_clicked"
 QT_MOC_LITERAL(73, 1338, 25), // "on_addContent_btn_clicked"
 QT_MOC_LITERAL(74, 1364, 33), // "on_tab2_newTagInput_returnPre..."
-QT_MOC_LITERAL(75, 1398, 31) // "on_tab2_delete_last_tag_clicked"
+QT_MOC_LITERAL(75, 1398, 31), // "on_tab2_delete_last_tag_clicked"
+QT_MOC_LITERAL(76, 1430, 39), // "on_tab2_addContent_last_histo..."
+QT_MOC_LITERAL(77, 1470, 39), // "on_tab2_addContent_next_histo..."
+QT_MOC_LITERAL(78, 1510, 38), // "on_tab2_createDoc_last_histor..."
+QT_MOC_LITERAL(79, 1549, 38) // "on_tab2_createDoc_next_histor..."
 
     },
     "bordercollie\0connect_wifi\0\0connectCMD\0"
@@ -151,7 +155,11 @@ QT_MOC_LITERAL(75, 1398, 31) // "on_tab2_delete_last_tag_clicked"
     "on_tab2_clearTags_btn_clicked\0"
     "on_addContent_btn_clicked\0"
     "on_tab2_newTagInput_returnPressed\0"
-    "on_tab2_delete_last_tag_clicked"
+    "on_tab2_delete_last_tag_clicked\0"
+    "on_tab2_addContent_last_history_clicked\0"
+    "on_tab2_addContent_next_history_clicked\0"
+    "on_tab2_createDoc_last_history_clicked\0"
+    "on_tab2_createDoc_next_history_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -161,7 +169,7 @@ static const uint qt_meta_data_bordercollie[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      42,   14, // methods
+      46,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -169,50 +177,54 @@ static const uint qt_meta_data_bordercollie[] = {
        7,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    3,  224,    2, 0x06 /* Public */,
-       6,    0,  231,    2, 0x06 /* Public */,
-       7,    1,  232,    2, 0x06 /* Public */,
-       9,    0,  235,    2, 0x06 /* Public */,
-      10,    4,  236,    2, 0x06 /* Public */,
-      15,    7,  245,    2, 0x06 /* Public */,
-      23,    3,  260,    2, 0x06 /* Public */,
+       1,    3,  244,    2, 0x06 /* Public */,
+       6,    0,  251,    2, 0x06 /* Public */,
+       7,    1,  252,    2, 0x06 /* Public */,
+       9,    0,  255,    2, 0x06 /* Public */,
+      10,    4,  256,    2, 0x06 /* Public */,
+      15,    7,  265,    2, 0x06 /* Public */,
+      23,    3,  280,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-      27,    1,  267,    2, 0x0a /* Public */,
-      30,    1,  270,    2, 0x0a /* Public */,
-      32,    0,  273,    2, 0x0a /* Public */,
-      33,    2,  274,    2, 0x0a /* Public */,
-      36,    2,  279,    2, 0x0a /* Public */,
-      40,    1,  284,    2, 0x0a /* Public */,
-      42,    3,  287,    2, 0x0a /* Public */,
-      44,    1,  294,    2, 0x0a /* Public */,
-      46,    0,  297,    2, 0x08 /* Private */,
-      47,    0,  298,    2, 0x08 /* Private */,
-      48,    1,  299,    2, 0x08 /* Private */,
-      50,    0,  302,    2, 0x08 /* Private */,
-      51,    0,  303,    2, 0x08 /* Private */,
-      52,    0,  304,    2, 0x08 /* Private */,
-      53,    0,  305,    2, 0x08 /* Private */,
-      54,    1,  306,    2, 0x08 /* Private */,
-      55,    0,  309,    2, 0x08 /* Private */,
-      56,    0,  310,    2, 0x08 /* Private */,
-      57,    0,  311,    2, 0x08 /* Private */,
-      58,    0,  312,    2, 0x08 /* Private */,
-      59,    0,  313,    2, 0x08 /* Private */,
-      60,    0,  314,    2, 0x08 /* Private */,
-      61,    1,  315,    2, 0x08 /* Private */,
-      63,    0,  318,    2, 0x08 /* Private */,
-      64,    0,  319,    2, 0x08 /* Private */,
-      65,    0,  320,    2, 0x08 /* Private */,
-      66,    1,  321,    2, 0x08 /* Private */,
-      68,    0,  324,    2, 0x08 /* Private */,
-      69,    0,  325,    2, 0x08 /* Private */,
-      70,    0,  326,    2, 0x08 /* Private */,
-      71,    0,  327,    2, 0x08 /* Private */,
-      72,    0,  328,    2, 0x08 /* Private */,
-      73,    0,  329,    2, 0x08 /* Private */,
-      74,    0,  330,    2, 0x08 /* Private */,
-      75,    0,  331,    2, 0x08 /* Private */,
+      27,    1,  287,    2, 0x0a /* Public */,
+      30,    1,  290,    2, 0x0a /* Public */,
+      32,    0,  293,    2, 0x0a /* Public */,
+      33,    2,  294,    2, 0x0a /* Public */,
+      36,    2,  299,    2, 0x0a /* Public */,
+      40,    1,  304,    2, 0x0a /* Public */,
+      42,    3,  307,    2, 0x0a /* Public */,
+      44,    1,  314,    2, 0x0a /* Public */,
+      46,    0,  317,    2, 0x08 /* Private */,
+      47,    0,  318,    2, 0x08 /* Private */,
+      48,    1,  319,    2, 0x08 /* Private */,
+      50,    0,  322,    2, 0x08 /* Private */,
+      51,    0,  323,    2, 0x08 /* Private */,
+      52,    0,  324,    2, 0x08 /* Private */,
+      53,    0,  325,    2, 0x08 /* Private */,
+      54,    1,  326,    2, 0x08 /* Private */,
+      55,    0,  329,    2, 0x08 /* Private */,
+      56,    0,  330,    2, 0x08 /* Private */,
+      57,    0,  331,    2, 0x08 /* Private */,
+      58,    0,  332,    2, 0x08 /* Private */,
+      59,    0,  333,    2, 0x08 /* Private */,
+      60,    0,  334,    2, 0x08 /* Private */,
+      61,    1,  335,    2, 0x08 /* Private */,
+      63,    0,  338,    2, 0x08 /* Private */,
+      64,    0,  339,    2, 0x08 /* Private */,
+      65,    0,  340,    2, 0x08 /* Private */,
+      66,    1,  341,    2, 0x08 /* Private */,
+      68,    0,  344,    2, 0x08 /* Private */,
+      69,    0,  345,    2, 0x08 /* Private */,
+      70,    0,  346,    2, 0x08 /* Private */,
+      71,    0,  347,    2, 0x08 /* Private */,
+      72,    0,  348,    2, 0x08 /* Private */,
+      73,    0,  349,    2, 0x08 /* Private */,
+      74,    0,  350,    2, 0x08 /* Private */,
+      75,    0,  351,    2, 0x08 /* Private */,
+      76,    0,  352,    2, 0x08 /* Private */,
+      77,    0,  353,    2, 0x08 /* Private */,
+      78,    0,  354,    2, 0x08 /* Private */,
+      79,    0,  355,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Bool, QMetaType::QString, QMetaType::Int,    3,    4,    5,
@@ -251,6 +263,10 @@ static const uint qt_meta_data_bordercollie[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 67,   49,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -311,6 +327,10 @@ void bordercollie::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 39: _t->on_addContent_btn_clicked(); break;
         case 40: _t->on_tab2_newTagInput_returnPressed(); break;
         case 41: _t->on_tab2_delete_last_tag_clicked(); break;
+        case 42: _t->on_tab2_addContent_last_history_clicked(); break;
+        case 43: _t->on_tab2_addContent_next_history_clicked(); break;
+        case 44: _t->on_tab2_createDoc_last_history_clicked(); break;
+        case 45: _t->on_tab2_createDoc_next_history_clicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -407,13 +427,13 @@ int bordercollie::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 42)
+        if (_id < 46)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 42;
+        _id -= 46;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 42)
+        if (_id < 46)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 42;
+        _id -= 46;
     }
     return _id;
 }
