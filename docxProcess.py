@@ -20,7 +20,7 @@ search_result = []
 count_num = [0, 0, 0]
 
 
-def createEngineeringDoc(title, author, contacts, tags, content, filepath, filename):
+def createEngineeringDoc(title, author, contacts, tags, content, filepath, filename, subtitle):
     document = Document()
     document.add_heading(title, 0)
     authorParagraph = document.add_paragraph('Author：')  # 添加作者信息
@@ -36,7 +36,7 @@ def createEngineeringDoc(title, author, contacts, tags, content, filepath, filen
     tagRun.font.name = u'楷体'
     tagrr = tagRun._element
     tagrr.rPr.rFonts.set(qn('w:eastAsia'), u'楷体')
-    document.add_heading(time.strftime("%Y-%m-%d---%H:%M:%S", time.localtime()), 1)  # 添加当前时间
+    document.add_heading(time.strftime("%Y-%m-%d---%H:%M:%S", time.localtime()) + '-->' + subtitle, 1)  # 添加当前时间
     paragraph = document.add_paragraph()
     paragraph.paragraph_format.space_after = Inches(0)
     run = paragraph.add_run(content)
@@ -82,6 +82,8 @@ def search_in_str(content, target, fuzzy):
                     if target[j] != content[i + j]:
                         flag = 0
                         break
+                if flag == 1:  # If there is a tag that is the same as target, break the loop
+                    break
     if flag == 1:
         return 1
     else:
@@ -119,31 +121,31 @@ def search_word_content(type, target, fuzzy, path):  # type给定搜索类型，
     #     print("第" + str(i) + "段的内容是：" + file.paragraphs[i].text)
 
 
-def search_whole_db(type, target, fuzzy, docPath):
-    paths = os.listdir(docPath)
-    for item in paths:
-        path = os.path.join(docPath, item)
-        if os.path.isdir(path):
-            search_whole_db(type, target, fuzzy, path)
-        else:
-            if path[-5:] == ".docx":
-                flag = 0
-                if "~$" in path:
-                    continue
-                flag = search_word_content(type, target, fuzzy, path)
-                if flag == 1:
-                    search_result.append(path)
-
-
-def return_search_result(type, target, fuzzy, docPath):
-    search_whole_db(type, target, fuzzy, docPath)
-    # f = open('C:\\Users\\huawei\\Desktop\\log.txt', 'a+')
-    # for i in search_result:
-    #     f.write(i + '\n')
-    # f.close()
-    result2return = search_result.copy()
-    search_result.clear()
-    return result2return
+# def search_whole_db(type, target, fuzzy, docPath):
+#     paths = os.listdir(docPath)
+#     for item in paths:
+#         path = os.path.join(docPath, item)
+#         if os.path.isdir(path):
+#             search_whole_db(type, target, fuzzy, path)
+#         else:
+#             if path[-5:] == ".docx":
+#                 flag = 0
+#                 if "~$" in path:
+#                     continue
+#                 flag = search_word_content(type, target, fuzzy, path)
+#                 if flag == 1:
+#                     search_result.append(path)
+#
+#
+# def return_search_result(type, target, fuzzy, docPath):
+#     search_whole_db(type, target, fuzzy, docPath)
+#     # f = open('C:\\Users\\huawei\\Desktop\\log.txt', 'a+')
+#     # for i in search_result:
+#     #     f.write(i + '\n')
+#     # f.close()
+#     result2return = search_result.copy()
+#     search_result.clear()
+#     return result2return
 
 
 def count_file_and_num(count_path):  # 统计文件总数和工程数量
@@ -187,6 +189,7 @@ def add_content(content, subtitle, filepath):
 # x = return_search_result(2, "Python", 1, "C:\\Users\\huawei\\iCloudDrive\\EngineeringRecords")
 # print(x)
 # createEngineeringDoc('测试功能', '齐承文-BUAA', 'Chengwen_qi@outlook.com', '测试', '本文件用于测试创建的功能','D:\\testCreate\\testMultiDir', 'test')
-
+# flag = search_word_content(2, "PyTorch", 0, "C:\\Users\\huawei\\iCloudDrive\\EngineeringRecords\\学习\\PyTorch\\PyTorch学习记录（官方教程）.docx")
+# print(flag)
 # 参考https://www.jianshu.com/p/1f60cdd9655a
 # add_content("测试新加内容的功能", "C:\\Users\\huawei\\iCloudDrive\\EngineeringRecords\\程序功能测试\\测试追加内容功能.docx")
