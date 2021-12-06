@@ -13,6 +13,7 @@ from docx.oxml.ns import qn
 from docx.shared import Inches
 import time
 import os
+import zipfile
 
 # root = "C:\\Users\\huawei\\iCloudDrive\\EngineeringRecords"
 # doc=Document("C:\\Users\\huawei\\iCloudDrive\\EngineeringRecords\\工程记录管理测试.docx")
@@ -185,6 +186,22 @@ def add_content(content, subtitle, filepath):
     document.save(filepath)
     return 1
 
+def export_as_zip(export_path: str, zip_name: str, files: list):
+    """
+    This function zip the selected file and then generate the zipfile to the place the user pointed
+    :param export_path: the path to generate the zip file
+    :param zip_name: the zipfile's name
+    :param files: the files selected by the user that need to export
+    :return: 1 means export successfully and 0 means failed to export
+    """
+    zip_file = zipfile.ZipFile(export_path + "\\" + zip_name, "w", zipfile.ZIP_DEFLATED)
+    # ZIP_DEFLATED means need compress and ZIP_STORED is copy without compression
+    for doc_file in files:
+        name = doc_file.split("\\")[-1]
+        zip_file.write(doc_file, arcname=name)
+    return 1
+
+
 # return_count_result("C:\\Users\\huawei\\iCloudDrive\\EngineeringRecords")
 # x = return_search_result(2, "Python", 1, "C:\\Users\\huawei\\iCloudDrive\\EngineeringRecords")
 # print(x)
@@ -193,3 +210,9 @@ def add_content(content, subtitle, filepath):
 # print(flag)
 # 参考https://www.jianshu.com/p/1f60cdd9655a
 # add_content("测试新加内容的功能", "C:\\Users\\huawei\\iCloudDrive\\EngineeringRecords\\程序功能测试\\测试追加内容功能.docx")
+# lis = ["C:\\Users\\huawei\\iCloudDrive\\EngineeringRecords\\程序功能测试\\测试11-30-2.docx",
+#        "C:\\Users\\huawei\\iCloudDrive\\EngineeringRecords\\程序功能测试\\测试11-30-3.docx",
+#        "C:\\Users\\huawei\\iCloudDrive\\EngineeringRecords\\程序功能测试\\测试11-30-4.docx",
+#        "C:\\Users\\huawei\\iCloudDrive\\EngineeringRecords\\程序功能测试\\测试11-30-6.docx"]
+# export_as_zip("C:\\Users\\huawei\\Desktop", "test.zip", lis)
+

@@ -1,10 +1,10 @@
 {
     "borderCollie":
         {
-            "LatestVersion":"V3.0.2",
+            "LatestVersion":"V3.1.0",
             "Url":"https://raw.githubusercontent.com/Trayvon001/borderCollie/master/borderCollie.exe",
             "UpdateTime":"2021-11-20",
-                  "ReleaseNote":"\n1.修复BUG:文件总数和文件大小不自动更新了\n2.修复BUG:在新增Tags后，需要重启才能启动新的Tag不全\n3.修复BUG:在新增Tags后，需要重启才能启动新的Tag不全"
+                  "ReleaseNote":"\n1.新建记录时也支持添加小标题\n2.把添加消费数据的下拉框也改成自动补全\n3.支持文件批量打包成一个zip，然后放到桌面\n4.新建文档的tags显示当前回车状态\n5.可以加个搜索进度条\n6.增加可以指定在某一个小标题后面加的功能，同时支持在该小标题下是否需要换行的功能"
         },
     "RGBContrl":
         {
